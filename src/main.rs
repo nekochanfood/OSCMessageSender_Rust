@@ -16,12 +16,14 @@ fn main() {
             args: vec![
                 OscType::String(str.to_string()),
                 OscType::Bool(true),
+                OscType::Bool(true)
             ]
         };
         
         send(message);
     }
 }
+
 
 fn input(comment: String) -> String{
     print!("{}",comment);
